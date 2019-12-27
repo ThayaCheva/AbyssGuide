@@ -1,0 +1,4 @@
+Thaya Chevaphatrakul
+
+- Open "index.html" to open to home page
+- To access the HTML and CSS, right click any of the HTML file and open with notepad or any other text editing software

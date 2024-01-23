@@ -1,0 +1,227 @@
+p {
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+#main-nav .nav-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-nav ul {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#main-nav ul li {
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+#main-nav h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+    width: 200px;
+    margin: 2rem;
+}
+
+/* Overview */
+#overview .overview-container {
+    display: flex;
+}
+
+#overview .overview-content {
+    padding: 2rem;
+}   
+
+#overview .overview-content h1,
+#overview .overview-content p {
+    text-align: center; 
+}
+
+/* Whistles */
+
+#whistles .white-header {
+    padding: 0;
+}
+
+#whistles .white-header p {
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.whistles-content {
+    padding: 2rem;
+}
+
+#whistles .white-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+}
+
+.white {
+    height: 450px;
+}
+
+.white div:first-child {
+    transform: translateY(50px);
+    text-align: center;
+    font-weight: bold;
+}
+
+.white div:last-child {
+    position: relative;
+    transform: translateY(150px);
+    z-index: 1;
+    height: 52%;
+}
+
+.white:hover {
+    width: 100%;
+}
+
+/* Other Whistles */
+
+#whistles .title-2 {
+    padding: 0 2rem;
+}
+
+#whistles .other-whistles-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2.5rem 2rem;
+}
+
+#whistles .other-whistles .whistle-2 {
+    width: 100%;
+    height: 350px;
+    transition: all 0.5s ease;
+}
+
+#whistles .other-whistles .whistle-2:hover {
+    height: 510px;
+}
+
+.other-whistles .whistle-2 .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transform: translateY(0);  
+}
+
+.other-whistles .whistle-2 .header img {
+    width: 50%;
+}
+
+.other-whistles .whistle-2 .header h1 {
+    transform: translateY(0);
+    width: 300px;
+}
+
+.other-whistles .whistle-2 p {
+    transform: translateY(0);
+    height: 350px;
+    font-size: 1rem;
+    padding: 1rem;  
+}
+
+.other-whistles .whistle-2:hover h1 {
+    transform: translateY(0);
+}
+
+.other-whistles .whistle-2:hover p {
+    height: 100%;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+/* Navigation */
+
+p {
+    font-size: 0.8rem;
+}
+
+#main-nav {
+    padding: 0;
+    width: 100%;
+}
+    
+#main-nav .nav-content ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+    
+#main-nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem;
+    border-bottom: #333 1px dotted;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+    
+#main-nav h1 {
+    margin: 0;
+}
+
+/* overview */
+#overview {
+    height: 90vh;
+}
+
+#overview .overview-content {
+    padding: 0;
+}
+
+/* White Whistles */
+.white div:last-child {
+    transform: translateY(0px);
+    height: 100%;
+}
+
+.white:hover div:last-child {
+    height: 85%;
+}
+
+.white p {
+    margin-top: 1rem;
+}
+/* Other Whistles */
+
+#whistles .other-whistles .whistle-2 {
+    height: 160px;
+}
+
+.other-whistles .whistles-2 .header {
+    transform: translateY(0);
+}
+
+
+/* Footer */
+
+#main-footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+#main-footer .footer-container p,
+#main-footer .footer-container > div a {
+    color: #999;
+    font-size: 0.8rem;
+    text-align: center;
+    text-shadow: none;
+}
+
+#main-footer .footer-container div i {
+    margin: 0;
+    padding: 1rem 1rem 0 1rem;
+}
